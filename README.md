@@ -274,7 +274,7 @@ This project was developed during a hackathon focused on improving online review
 
 **Core Development:**
 - **Yilin: Data Pipeline**: Implemented robust data collection, cleaning, and preprocessing systems
-- **Jiayi: Feature Engineering**: Designed 12 sophisticated features for restaurant review analysis
+- **Jiayi: Feature Engineering**: Designed 11 sophisticated features for restaurant review analysis
 - **Duan Shuo & Xijia: Machine Learning**: Built and optimized Random Forest classifier with comprehensive validation
 - **Xuanlin: API Integration**: Created reliable OpenAI GPT-4 labeling system with error handling
 - **Production Pipeline**: Developed separate training/inference systems for scalability
