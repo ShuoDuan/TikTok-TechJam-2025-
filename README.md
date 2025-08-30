@@ -65,6 +65,7 @@ cd travel-parrot
 
 # Ensure you have the pre-trained model file
 # Download random_forest_review_classifier.pkl to the project directory
+# Please change all the file path to your own direcotry
 ```
 
 ### Using the Pre-trained Model
