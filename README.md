@@ -193,9 +193,9 @@ Assess the google collab notebook via this link: https://colab.research.google.c
 
 The training process includes:
 - 80/10/10 train-validation-test split with stratification
-- Cross-validation for model selection
-- Hyperparameter optimization via grid search
-- Learning curves and validation curves
+- Model: roberta-base encoder + custom classifier head (Linear → GELU → Dropout → Linear), best model selected by macro-F1
+- Hyperparameter optimization via fine tune
+- Class imbalance handling: class-weighted cross-entropy and oversampling of minority classes
 - Feature importance analysis
 - Comprehensive evaluation metrics
 
