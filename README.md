@@ -174,7 +174,7 @@ Our system extracts 11 sophisticated features from review text:
 python feature_engineering_for_training_final.py
 ```
 
-### Model Training and Evaluation
+### Random Forest Classification
 ```python
 # Train Random Forest with comprehensive validation
 python model_training.py
@@ -188,6 +188,16 @@ The training process includes:
 - Feature importance analysis
 - Comprehensive evaluation metrics
 
+### RoBERTa based Classification
+Assess the google collab notebook via this link: https://colab.research.google.com/drive/1nByWAY4L1_j4mRrbx7UWjcQ9uWHOflGp?usp=drive_link
+
+The training process includes:
+- 80/10/10 train-validation-test split with stratification
+- Cross-validation for model selection
+- Hyperparameter optimization via grid search
+- Learning curves and validation curves
+- Feature importance analysis
+- Comprehensive evaluation metrics
 
 ## Data Labeling with OpenAI
 
