@@ -223,7 +223,10 @@ The system includes an automated labeling pipeline using OpenAI's GPT-4:
 
 <img width="780" height="470" alt="687e650d3200f8464bc3b0434bc01034" src="https://github.com/user-attachments/assets/6b4f0027-8326-4885-9742-a249d98b10e1" />
 
-**Performnce on Random Roberta**
+
+
+
+**Performnce on Roberta**
 
 
 
