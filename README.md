@@ -173,7 +173,7 @@ python trytry.py
 ```
 
 ### Feature Engineering
-Our system extracts 12 sophisticated features from review text:
+Our system extracts 11 sophisticated features from review text:
 ```python
 # Generate features for training data
 python feature_engineering_for_training_final.py
@@ -193,32 +193,11 @@ The training process includes:
 - Feature importance analysis
 - Comprehensive evaluation metrics
 
-## File Structure
-
-```
-travel-parrot/
-├── feature_engineering_for_training.py      # Feature extraction for training data
-├── feature_engineering_for_testing.py       # Feature extraction for new data  
-├── feature_engineering_for_training_final.py # Optimized training features
-├── model_training.py                        # ML model training and evaluation
-├── trytry.py                               # OpenAI GPT-4 labeling system
-├── jsson_to_csv.py                         # Data format conversion utilities
-├── review_labelled_cleaned.csv             # Sample labeled dataset
-├── README.md                               # Project documentation
-└── requirements.txt                        # Python dependencies
-```
 
 ## Data Labeling with OpenAI
 
 The system includes an automated labeling pipeline using OpenAI's GPT-4:
 
-```python
-# Configure your OpenAI API key
-os.environ["OPENAI_API_KEY"] = "your-api-key-here"
-
-# Run automated labeling
-python trytry.py
-```
 
 **Features:**
 - Robust error handling and retry mechanisms
@@ -259,25 +238,6 @@ best_model = tune_hyperparameters(X_train, y_train)
 comprehensive_validation(model, X, y)
 ```
 
-### Model Persistence
-
-```python
-# Save trained model for production use
-save_model(model, scaler, label_encoder, 'classifier.pkl')
-
-# Load model for inference
-model_dict = load_model('classifier.pkl')
-```
-
-## API Integration
-
-The system is designed for easy integration with existing review platforms:
-
-- **RESTful API endpoints** for real-time classification
-- **Batch processing** for large-scale historical data
-- **Confidence scoring** for nuanced decision-making
-- **Scalable architecture** for high-throughput scenarios
-
 ## Reproducing Results
 
 To reproduce our hackathon results from scratch:
@@ -291,7 +251,7 @@ python jsson_to_csv.py  # Convert JSONL to CSV format
 ### 2. Data Labeling (Optional - we provide pre-labeled data)
 ```bash
 # Generate labels using OpenAI GPT-4 (requires API key)
-python trytry.py
+python Data_labeling.py
 ```
 
 ### 3. Feature Engineering and Model Training
@@ -319,10 +279,10 @@ The training script provides:
 This project was developed during a hackathon focused on improving online review quality:
 
 **Core Development:**
-- **Data Pipeline**: Implemented robust data collection, cleaning, and preprocessing systems
-- **Feature Engineering**: Designed 12 sophisticated features for restaurant review analysis
-- **Machine Learning**: Built and optimized Random Forest classifier with comprehensive validation
-- **API Integration**: Created reliable OpenAI GPT-4 labeling system with error handling
+- **Yilin: Data Pipeline**: Implemented robust data collection, cleaning, and preprocessing systems
+- **Jiayi: Feature Engineering**: Designed 12 sophisticated features for restaurant review analysis
+- **Duan Shuo & XijiaMachine Learning**: Built and optimized Random Forest classifier with comprehensive validation
+- **Xuanlin: API Integration**: Created reliable OpenAI GPT-4 labeling system with error handling
 - **Production Pipeline**: Developed separate training/inference systems for scalability
 
 **Technical Implementation:**
@@ -331,39 +291,4 @@ This project was developed during a hackathon focused on improving online review
 - **Documentation**: Created detailed code documentation and user guides
 - **Performance Optimization**: Optimized for both accuracy and computational efficiency
 
-## Contributing
 
-We welcome contributions to improve The Travel Parrot! Please feel free to:
-
-1. Fork the repository
-2. Create a feature branch (`git checkout -b feature/amazing-feature`)
-3. Commit your changes (`git commit -m 'Add amazing feature'`)
-4. Push to the branch (`git push origin feature/amazing-feature`)
-5. Open a Pull Request
-
-## Future Enhancements
-
-- **🤖 Transformer Integration**: Experiment with BERT and RoBERTa models
-- **🌐 Multi-language Support**: Expand to support international reviews
-- **📊 Real-time Dashboard**: Administrative interface for review management
-- **🔍 Explainable AI**: Model interpretability for classification decisions
-- **🛡️ Adversarial Robustness**: Defense against manipulation attempts
-
-## License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-
-## Acknowledgments
-
-- Built during a hackathon focused on improving online review quality
-- Uses Google Local Reviews dataset for training and validation
-- Leverages OpenAI's GPT-4 for intelligent data labeling
-- Inspired by the need for trustworthy travel recommendations
-
-## Contact
-
-For questions, suggestions, or collaboration opportunities, please open an issue or reach out to the development team.
-
----
-
-**The Travel Parrot** - *Your reliable companion for authentic dining discoveries* 🦜✨
