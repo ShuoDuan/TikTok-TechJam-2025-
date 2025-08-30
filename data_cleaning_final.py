@@ -18,6 +18,7 @@ def clean_text(text):
 for col in ["name", "text"]:
     if col in reviews.columns:
         reviews[col] = reviews[col].apply(clean_text)
+reviews = reviews.dropna(subset=["text"])
 
 if 'name' in reviews.columns:
     print(reviews['name'].value_counts())
@@ -28,3 +29,4 @@ print(reviews_cleaned.head())
 
 reviews_cleaned.to_csv(r"C:\Users\zhang\Desktop\reviews_cleaned.csv", index=False)
 print("\nCleaned data saved to 'C:\\Users\\zhang\\Desktop\\reviews_cleaned.csv'")
+
