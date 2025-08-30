@@ -69,7 +69,7 @@ cd travel-parrot
 # Please change all the file path to your own direcotry
 ```
 
-### Using the Pre-trained Model
+### Using the Pre-trained Random Forest Model
 
 **Step 1: Prepare Your Review Data**
 
@@ -156,6 +156,10 @@ results = pd.read_csv('labeled_reviews.csv')
 print("Classification Distribution:")
 print(results['predicted_label'].value_counts())
 ```
+
+### Using the Advanced RoBERTa Model
+Access via the link: https://colab.research.google.com/drive/1nByWAY4L1_j4mRrbx7UWjcQ9uWHOflGp?usp=drive_link
+Or download the notebook from our main folder
 
 ## Model Training Process
 
@@ -288,7 +292,7 @@ This project was developed during a hackathon focused on improving online review
 - **Yilin: Data Pipeline**: Implemented robust data collection, cleaning, and preprocessing systems
 - **Jiayi: Feature Engineering**: Designed 11 sophisticated features for restaurant review analysis
 - **Duan Shuo & Xijia: Machine Learning**: Built and optimized Random Forest classifier with comprehensive validation
-- **Xuanlin: API Integration**: Created reliable OpenAI GPT-4 labeling system with error handling
+- **Xuanlin: API Integration**: Created reliable OpenAI GPT-4 labeling system with error handling, Trained and fine tune the RoBERTA classifier
 - **Production Pipeline**: Developed separate training/inference systems for scalability
 
 **Technical Implementation:**
