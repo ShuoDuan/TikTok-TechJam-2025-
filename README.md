@@ -45,6 +45,7 @@ The system uses 11 sophisticated features designed specifically for restaurant r
 ### 🤖 Advanced ML Pipeline
 
 - **Random Forest Classifier** optimized for mixed feature types
+- **NLP-Based Classifier** implemented using **RoBERTA**
 - **Comprehensive validation** with cross-validation and learning curves
 - **Hyperparameter tuning** for optimal performance
 - **Separate training/testing pipelines** for production scalability
