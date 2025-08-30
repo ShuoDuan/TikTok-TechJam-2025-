@@ -169,7 +169,7 @@ If you want to understand how we built the model or train your own:
 We used OpenAI GPT-4 to automatically label 10,000+ restaurant reviews:
 ```python
 # Run automated labeling (requires OpenAI API key)
-python trytry.py
+python Data_Labeling.py
 ```
 
 ### Feature Engineering
@@ -251,7 +251,7 @@ python jsson_to_csv.py  # Convert JSONL to CSV format
 ### 2. Data Labeling (Optional - we provide pre-labeled data)
 ```bash
 # Generate labels using OpenAI GPT-4 (requires API key)
-python Data_labeling.py
+python Data_Labeling.py
 ```
 
 ### 3. Feature Engineering and Model Training
