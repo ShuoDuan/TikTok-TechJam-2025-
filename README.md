@@ -18,13 +18,7 @@ Restaurant review platforms are increasingly polluted with fake reviews, spam, a
 
 ## Architecture
 
-```
-Stage 1: Model Training Pipeline
-Raw Review Data → OpenAI GPT-4 Labeling → Data Cleaning → Feature Engineering → Random Forest Training
-
-Stage 2: Production Classification Pipeline  
-New Reviews → Data Cleaning → Feature Engineering → Trained Model → Review Classification
-```
+![Travel Parrot Architecture](https://github.com/ShuoDuan/the-travel-parrot/blob/main/image.jpeg?raw=true)
 
 ## Features
 
