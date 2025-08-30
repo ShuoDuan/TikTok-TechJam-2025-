@@ -66,7 +66,7 @@ pip install pandas numpy scikit-learn matplotlib seaborn joblib
 ### Repository Setup
 ```bash
 # Clone the repository
-git clone https://github.com/yourusername/travel-parrot.git
+git clone https://github.com/ShuoDuan/travel-parrot.git
 cd travel-parrot
 
 # Ensure you have the pre-trained model file
