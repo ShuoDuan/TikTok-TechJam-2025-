@@ -262,10 +262,11 @@ comprehensive_validation(model, X, y)
 This project was developed during a hackathon focused on improving online review quality:
 
 **Core Development:**
-- **Yilin: Data Pipeline**: Implemented robust data collection, cleaning, and preprocessing systems
-- **Jiayi: Feature Engineering**: Designed 11 sophisticated features for restaurant review analysis
-- **Duan Shuo & Xijia: Machine Learning**: Built and optimized Random Forest classifier with comprehensive validation
-- **Xuanlin: API Integration**: Created reliable OpenAI GPT-4 labeling system with error handling, Trained and fine tune the RoBERTA classifier
+- **Fang Yilin: Data Pipeline**: Implemented robust data collection, cleaning, and preprocessing systems
+- **Zhang Jiayi: Feature Engineering**: Designed 11 sophisticated features for restaurant review analysis
+- **Duan Shuo: Machine Learning**: Built and optimized Random Forest classifier with comprehensive validation
+- **Lou Xijia: Machine Learning**: Built and optimized Random Forest classifier with comprehensive validation, Demo Video Editing
+- **Zhang Xuanlin: API Integration**: Created reliable OpenAI GPT-4 labeling system with error handling, Trained and fine tune the RoBERTA classifier
 - **Production Pipeline**: Developed separate training/inference systems for scalability
 
 **Technical Implementation:**
