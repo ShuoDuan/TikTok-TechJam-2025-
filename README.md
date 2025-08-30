@@ -216,12 +216,11 @@ The system includes an automated labeling pipeline using OpenAI's GPT-4:
 - Comprehensive logging and fallback strategies
 
 ## Model Performance
+**Performnce on Random Forest**
+<img width="780" height="470" alt="687e650d3200f8464bc3b0434bc01034" src="https://github.com/user-attachments/assets/6b4f0027-8326-4885-9742-a249d98b10e1" />
 
-The Random Forest classifier achieves:
-- **High accuracy** on multi-class review classification
-- **Robust performance** across different restaurant types
-- **Interpretable results** with feature importance analysis
-- **Production-ready** with comprehensive validation
+**Performnce on Random Roberta**
+<img width="795" height="468" alt="dac97f0e2126a11209fe0ab43a094f6d" src="https://github.com/user-attachments/assets/90d0df01-ae3e-4174-a514-7b6361fac97c" />
 
 ### Evaluation Metrics
 
@@ -247,42 +246,6 @@ best_model = tune_hyperparameters(X_train, y_train)
 # Full model validation suite  
 comprehensive_validation(model, X, y)
 ```
-
-## Reproducing Results
-
-To reproduce our hackathon results from scratch:
-
-### 1. Data Collection and Preprocessing
-```bash
-# Process raw review data from Google Local Reviews dataset
-python jsson_to_csv.py  # Convert JSONL to CSV format
-```
-
-### 2. Data Labeling (Optional - we provide pre-labeled data)
-```bash
-# Generate labels using OpenAI GPT-4 (requires API key)
-python Data_Labeling.py
-```
-
-### 3. Feature Engineering and Model Training
-```bash
-# Train the model with comprehensive validation
-python model_training.py
-```
-
-### 4. Model Evaluation
-The training script provides:
-- Cross-validation scores
-- Confusion matrices
-- Feature importance analysis
-- Learning curves
-- Hyperparameter optimization results
-
-### Expected Results
-- Multi-class classification accuracy: 85-90%
-- F1-scores across all categories: 0.80+
-- Robust performance on restaurant review classification
-- Production-ready model saved as `random_forest_review_classifier.pkl`
 
 ## Team Contributions
 
