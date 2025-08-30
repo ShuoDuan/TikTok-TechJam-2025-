@@ -55,7 +55,8 @@ The system uses 11 sophisticated features designed specifically for restaurant r
 ### Prerequisites
 ```bash
 # Install required packages
-pip install pandas numpy scikit-learn matplotlib seaborn joblib
+pip install -U pandas numpy scikit-learn matplotlib seaborn joblib torch transformers accelerate json5 openai
+
 ```
 
 ### Repository Setup
